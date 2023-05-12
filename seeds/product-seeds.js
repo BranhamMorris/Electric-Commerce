@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const { Product } = require('../models');
 
 const productData = [
@@ -36,7 +35,7 @@ const productData = [
 
 const seedProducts = () => Product.bulkCreate(productData);
 
-=======
+
 const { Product } = require('../models');
 
 const productData = [
@@ -74,5 +73,5 @@ const productData = [
 
 const seedProducts = () => Product.bulkCreate(productData);
 
->>>>>>> 0a16b6473716ffbfdb784e81d47f0aa40f39362f
+
 module.exports = seedProducts;

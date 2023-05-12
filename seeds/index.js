@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const seedCategories = require('./category-seeds');
 const seedProducts = require('./product-seeds');
 const seedTags = require('./tag-seeds');
@@ -24,7 +23,7 @@ const seedAll = async () => {
   process.exit(0);
 };
 
-=======
+
 const seedCategories = require('./category-seeds');
 const seedProducts = require('./product-seeds');
 const seedTags = require('./tag-seeds');
@@ -50,5 +49,5 @@ const seedAll = async () => {
   process.exit(0);
 };
 
->>>>>>> 0a16b6473716ffbfdb784e81d47f0aa40f39362f
+
 seedAll();

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const { Tag } = require('../models');
 
 const tagData = [
@@ -30,7 +29,7 @@ const tagData = [
 
 const seedTags = () => Tag.bulkCreate(tagData);
 
-=======
+
 const { Tag } = require('../models');
 
 const tagData = [
@@ -62,5 +61,5 @@ const tagData = [
 
 const seedTags = () => Tag.bulkCreate(tagData);
 
->>>>>>> 0a16b6473716ffbfdb784e81d47f0aa40f39362f
+
 module.exports = seedTags;
