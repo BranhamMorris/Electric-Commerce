@@ -1,13 +1,35 @@
-<<<<<<< HEAD
+
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
 
-class ProductTag extends Model {}
+class ProductTag extends Model { }
 
 ProductTag.init(
   {
     // define columns
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    product_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references the `driver` model, which we set in `Driver.js` as its `modelName` property
+        model: 'product',
+        key: 'id',
+      },
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references the `driver` model, which we set in `Driver.js` as its `modelName` property
+        model: 'tag',
+        key: 'id',
+      },
+    }
   },
   {
     sequelize,
@@ -18,25 +40,4 @@ ProductTag.init(
   }
 );
 
-=======
-const { Model, DataTypes } = require('sequelize');
-
-const sequelize = require('../config/connection');
-
-class ProductTag extends Model {}
-
-ProductTag.init(
-  {
-    // define columns
-  },
-  {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'product_tag',
-  }
-);
-
->>>>>>> 0a16b6473716ffbfdb784e81d47f0aa40f39362f
 module.exports = ProductTag;
