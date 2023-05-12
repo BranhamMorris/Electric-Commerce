@@ -1,4 +1,4 @@
-# Eletric-Commerce
+# Electric-Commerce
 
 User Story-
 
