@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const { Category } = require('../models');
 
 const categoryData = [
@@ -21,7 +21,6 @@ const categoryData = [
 
 const seedCategories = () => Category.bulkCreate(categoryData);
 
-=======
 const { Category } = require('../models');
 
 const categoryData = [
@@ -44,5 +43,4 @@ const categoryData = [
 
 const seedCategories = () => Category.bulkCreate(categoryData);
 
->>>>>>> 0a16b6473716ffbfdb784e81d47f0aa40f39362f
 module.exports = seedCategories;
